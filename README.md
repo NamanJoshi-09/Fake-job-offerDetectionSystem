@@ -54,7 +54,7 @@ pip install -r requirements.txt
 #    Put fake_job_postings.csv in the same folder as app.py
 
 # 4. Run the app
-streamlit run app.py
+streamlit run model/app.py
 ```
 
 The app opens at **http://localhost:8501**
