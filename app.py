@@ -1,10 +1,21 @@
 import streamlit as st
 import pickle
-from train_model import explain_prediction
+from model.train_model import explain_prediction
+import os
 
-model = pickle.load(open("model.pkl", "rb"))
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+# Base directory (root of project)
+BASE_DIR = os.path.dirname(__file__)
 
+# Correct paths (since model.pkl & vectorizer.pkl are in root)
+model_path = os.path.join(BASE_DIR, "model.pkl")
+vectorizer_path = os.path.join(BASE_DIR, "vectorizer.pkl")
+
+# Load model and vectorizer safely
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
+
+with open(vectorizer_path, "rb") as f:
+    vectorizer = pickle.load(f)
 # ─── Sample Texts ────────────────────────────────────────────────────────────
 SCAM_SAMPLE = """Job Title: Work From Home Data Entry Specialist — $5,000/Week GUARANTEED!
 
