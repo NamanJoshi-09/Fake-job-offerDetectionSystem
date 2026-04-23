@@ -23,7 +23,8 @@
 
 ## 📸 Screenshot
 
-![JobShield App Screenshot](https://raw.githubusercontent.com/NamanJoshi-09/Fake-job-offerDetectionSystem/main/screenshot.png)
+<img width="1920" height="2987" alt="screencapture-minor-sem2-dataminds-streamlit-app-2026-04-23-13_57_14" src="https://github.com/user-attachments/assets/2db3a5ff-4fd1-4f5d-b855-5f389443a84d" />
+
 
 > *Dark-themed UI with sample loader, analysis portal, and a 3-step "How It Works" section.*
 
